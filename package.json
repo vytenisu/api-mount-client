@@ -1,0 +1,48 @@
+{
+  "name": "api-mount-client",
+  "version": "0.0.0",
+  "description": "Library for making communication between front-end and back-end simple",
+  "main": "dist/node.js",
+  "browser": "./dist/browser.js",
+  "scripts": {},
+  "homepage": "https://github.com/vytenisu/api-mount-client",
+  "bugs": {
+    "url": "https://github.com/vytenisu/api-mount-client/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vytenisu/api-mount-client.git"
+  },
+  "keywords": [
+    "fetch",
+    "api",
+    "browser",
+    "client",
+    "front-end",
+    "front",
+    "auto",
+    "automatic",
+    "direct",
+    "api-link",
+    "back-end",
+    "front-end",
+    "server",
+    "client",
+    "proxy",
+    "easy",
+    "simple",
+    "ts",
+    "TypeScript",
+    "generator",
+    "vytenis",
+    "urbonavicius",
+    "vytenisu",
+    "WhiteTurbine",
+    "Whitend"
+  ],
+  "author": {
+    "name": "Vytenis Urbonavičius",
+    "url": "https://github.com/vytenisu"
+  },
+  "license": "MIT"
+}
