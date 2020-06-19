@@ -1,6 +1,6 @@
 {
   "name": "api-mount-client",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "Library for making communication between front-end and back-end simple",
   "main": "dist/node.js",
   "browser": "./dist/index.js",
