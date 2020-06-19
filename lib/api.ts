@@ -22,7 +22,7 @@ export interface IMountApiOptions {
 export const mountApi = (options: IMountApiOptions = {}) =>
   new Api({
     multipleMethodArgs: true,
-    baseUrl: options.baseUrl,
+    baseUrl: options.baseUrl ?? '/',
     requestMethodMapper: (methodName: string) => ({
       requestMethod: 'POST',
       methodName,

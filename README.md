@@ -6,7 +6,7 @@ _api-mount-client_ provides a straightforward way to reach back-end API served u
 
 Basically it should feel as if server-side API methods are called directly.
 
-This library is based on [api-link](http://npmjs.com/package/api-link) which is dedicating request functionality to either browser's _fetch_ API or a globally available _fetch_ method in a Node.js environment (often [node-fetch](https://www.npmjs.com/package/node-fetch))
+This library is based on [api-link](http://npmjs.com/package/api-link) which is dedicating request functionality to either browser's _fetch_ API or a _node-fetch_ in a Node.js environment.
 
 ---
 
@@ -48,8 +48,6 @@ const result = await SomeApi.foo() // 'foo'
 Note that there are multiple ways how API is served. API may be a set of functions, static class, object created from a class, etc. More information about serving an API can be found in the README of [api-mount-server](http://npmjs.com/package/api-mount-server).
 
 In case _foo_ rejects a promise or throws an exception, client will reject a promise with error as a payload.
-
-Note that in case _api-mount-client_ is used in a server enviroment, a global _fetch_ method needs to be available. This can be achieved by installing [node-fetch](https://www.npmjs.com/package/node-fetch).
 
 ## Supported Configuration
 

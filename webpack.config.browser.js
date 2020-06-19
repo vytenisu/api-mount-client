@@ -1,18 +1,12 @@
 const webpack = require('webpack')
-const nodeExternals = require('webpack-node-externals')
 
 const exportedConfig = {
-  entry: __dirname + '/index.browser.ts',
+  entry: __dirname + '/index.ts',
   devtool: 'source-map',
   optimization: {
     minimize: true,
   },
   mode: 'production',
-  externals: [
-    nodeExternals({
-      whitelist: ['param-case', 'tslib', 'dot-case', 'no-case', 'lower-case'],
-    }),
-  ],
   resolve: {
     extensions: ['.webpack.js', '.web.js', '.ts', '.js'],
   },
@@ -21,7 +15,7 @@ const exportedConfig = {
     filename: 'index.js',
     sourceMapFilename: 'index.js.map',
     libraryTarget: 'umd',
-    library: 'ApiLink',
+    library: 'ApiMountClient',
   },
   resolveLoader: {
     modules: [__dirname + '/node_modules'],

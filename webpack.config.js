@@ -2,7 +2,6 @@ const webpack = require('webpack')
 const LicenseWebpackPlugin = require('license-webpack-plugin')
   .LicenseWebpackPlugin
 const NpmDtsPlugin = require('npm-dts-webpack-plugin')
-const nodeExternals = require('webpack-node-externals')
 
 const exportedConfig = {
   entry: __dirname + '/index.ts',
@@ -12,11 +11,6 @@ const exportedConfig = {
   },
   mode: 'production',
   target: 'node',
-  externals: [
-    nodeExternals({
-      whitelist: ['param-case', 'tslib', 'dot-case', 'no-case', 'lower-case'],
-    }),
-  ],
   plugins: [new LicenseWebpackPlugin(), new NpmDtsPlugin()],
   resolve: {
     extensions: ['.webpack.js', '.web.js', '.ts', '.js'],
@@ -26,7 +20,7 @@ const exportedConfig = {
     filename: 'node.js',
     sourceMapFilename: 'node.js.map',
     libraryTarget: 'umd',
-    library: 'ApiLink',
+    library: 'ApiMountClient',
     globalObject: 'global',
   },
   resolveLoader: {
